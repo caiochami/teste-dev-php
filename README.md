@@ -18,10 +18,14 @@
 ## Instalação
 
 Criar banco de dados com o nome puzlplacedb
-cd server && composer install && php artisan key:generate && php artisan migrate --seed && php artisan serve
-cd client && npm install && npm run dev
+
+Acesse a pasta server executando os comandos
+cd server && cp .env.example .env && composer install && php artisan key:generate && php artisan migrate --seed && php artisan serve
+
+Acesse a pasta client e executando os comandos;
+npm install && npm run dev
 
 ## Tests
 
-cd /server
+Para realizar os testes unitários e de integração, acesse a pasta server e execute o comando:
 php artisan test
